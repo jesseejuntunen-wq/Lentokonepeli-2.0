@@ -6,6 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-color: pink;
 }
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

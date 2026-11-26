@@ -1,12 +1,10 @@
-console.log("Haloo toimiiks tää paska")
+console.log("Haloo toimiiks tää paska") 
 
-<<<<<<< HEAD
 const playButton = document.querySelector("#play");
 
 playButton.addEventListener("click", function () {
     console.log("Game started!");
 });
-=======
 
 
 
@@ -23,7 +21,7 @@ playButton.addEventListener("click", function () {
 
 
 
-//tähän piste paskat jippii
+//tähän piste paskat jippii   korvataan siis tää kokonaa pois about
 const scores = []; 
 
 const pisteet = 450; 
@@ -51,4 +49,3 @@ jarjestetty.forEach((tulos, indeksi) => {
 
 
 
->>>>>>> ef6c464 (Omat muutokset)

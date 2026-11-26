@@ -6,7 +6,6 @@ const playButton = document.querySelector("#play");
 const pisteetButton = document.querySelector("#pisteet");
 
 function pelaaPeli() {
-    // Korvaa tämä omalla pelilogiikallasi, joka palauttaa lopputuloksen
     let pisteet = 450;
     return pisteet;
 }
@@ -25,7 +24,7 @@ playButton.addEventListener("click", function () {
 pisteetButton.addEventListener("click", function () {
     const ikkuna = window.open("", "Scoreboard", "width=420,height=450");
     if (!ikkuna) {
-        alert("Selain esti uuden ikkunan avaamisen. Salli ponnahdusikkunat tälle sivulle.");
+        alert("Selain esti ikkunan avaamisen");
         return;
     }
 
@@ -34,7 +33,7 @@ pisteetButton.addEventListener("click", function () {
         .slice(0, 10);
 
     const rivit = jarjestetty.length
-        ? jarjestetty.map((t, i) => `<li>${i + 1}. ${t.nimi} - ${t.pisteet}</li>`).join("")
+        ? jarjestetty.map((t, i) => `<li> ${t.nimi} - ${t.pisteet}</li>`).join("")
         : "<li>Ei vielä tuloksia</li>";
 
     ikkuna.document.open();
